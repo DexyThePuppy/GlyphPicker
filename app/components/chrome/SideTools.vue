@@ -1,7 +1,11 @@
 <script setup lang="ts">
+import { publicUrl } from '~/utils/publicUrl'
+
 const { showNames, glyphByName } = useCatalog()
 const { soundOn, toggle, pop } = useUiSounds()
 const { show } = useToast()
+
+const packUrl = publicUrl('pack/glyph-pack.zip')
 
 function glyph(name: string, fallback = '•'): string {
   return glyphByName.value.get(name) || fallback
@@ -44,7 +48,7 @@ function onDownloadClick(): void {
     <a
       class="icon-btn"
       aria-pressed="true"
-      href="/pack/glyph-pack.zip"
+      :href="packUrl"
       download="glyph-pack.zip"
       title="Download fonts + text pack"
       @click="onDownloadClick"

@@ -1,7 +1,9 @@
 # GlyphPicker
 
-Private Nuxt app to browse and copy icon glyphs — weight slider, smart search,
+Nuxt SPA to browse and copy icon glyphs — weight slider, smart search,
 category tabs, motion, and UI sounds.
+
+**Live:** https://DexyThePuppy.github.io/GlyphPicker/
 
 ## Structure
 
@@ -50,7 +52,18 @@ npm run dev
 | `npm run build:data` | index + categories + pack |
 | `python scripts/make-sounds.py` | Regenerate UI wavs |
 
+## Deploy (GitHub Pages)
+
+Pushes to `main` / `master` run [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
+(same Actions → Pages flow as the Portfolio repo).
+
+1. Repo **Settings → Pages → Source: GitHub Actions**
+2. Push to `main` or `master` (or run the workflow manually)
+3. Site: `https://DexyThePuppy.github.io/GlyphPicker/`
+
+The downloadable `glyph-pack.zip` is gitignored and not published on Pages (build it locally with `npm run build:pack`).
+
 ## Notes
 
-Keep fonts and raw dumps local. Generated packs live under `public/pack/` (gitignored).
+Generated packs live under `public/pack/` (gitignored).
 Do not redistribute proprietary font assets.

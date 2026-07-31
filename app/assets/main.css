@@ -1,15 +1,5 @@
-/* ---------- Glyph faces (static weights) ---------- */
-@font-face { font-family: "Glyph Face"; src: url("/fonts/GlyphFace-Ultralight.otf") format("opentype"); font-weight: 100; font-style: normal; font-display: block; }
-@font-face { font-family: "Glyph Face"; src: url("/fonts/GlyphFace-Thin.otf") format("opentype"); font-weight: 200; font-style: normal; font-display: block; }
-@font-face { font-family: "Glyph Face"; src: url("/fonts/GlyphFace-Light.otf") format("opentype"); font-weight: 300; font-style: normal; font-display: block; }
-@font-face { font-family: "Glyph Face"; src: url("/fonts/GlyphFace-Regular.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: block; }
-@font-face { font-family: "Glyph Face"; src: url("/fonts/GlyphFace-Medium.otf") format("opentype"); font-weight: 500; font-style: normal; font-display: block; }
-@font-face { font-family: "Glyph Face"; src: url("/fonts/GlyphFace-Semibold.otf") format("opentype"); font-weight: 600; font-style: normal; font-display: block; }
-@font-face { font-family: "Glyph Face"; src: url("/fonts/GlyphFace-Bold.otf") format("opentype"); font-weight: 700; font-style: normal; font-display: block; }
-@font-face { font-family: "Glyph Face"; src: url("/fonts/GlyphFace-Heavy.otf") format("opentype"); font-weight: 800; font-style: normal; font-display: block; }
-@font-face { font-family: "Glyph Face"; src: url("/fonts/GlyphFace-Black.otf") format("opentype"); font-weight: 900; font-style: normal; font-display: block; }
-
 /* ---------- Tokens ---------- */
+/* @font-face rules are injected in app.vue so they respect app.baseURL */
 :root {
   --bg: #0f1210;
   --bg-elevated: #171b18;

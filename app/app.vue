@@ -1,8 +1,18 @@
 <script setup lang="ts">
-import { weightAt } from '~/utils/weights'
+import { FONT_FAMILY, WEIGHTS, weightAt } from '~/utils/weights'
+import { publicUrl } from '~/utils/publicUrl'
 
 const { load, loaded, error, browseMode, weightIndex } = useCatalog()
 const { showDetail, drawerMode } = useUiLayout()
+
+const fontFaceCss = WEIGHTS.map(
+  (w) =>
+    `@font-face{font-family:"${FONT_FAMILY}";src:url("${publicUrl(`fonts/${w.file}`)}") format("opentype");font-weight:${w.weight};font-style:normal;font-display:block;}`,
+).join('')
+
+useHead({
+  style: [{ key: 'glyph-faces', textContent: fontFaceCss }],
+})
 
 setupUiSounds()
 onMounted(() => {

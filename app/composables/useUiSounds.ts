@@ -1,4 +1,5 @@
 import { useSound } from '@vueuse/sound'
+import { publicUrl } from '~/utils/publicUrl'
 
 type SfxName = 'pop' | 'tick' | 'toggle'
 
@@ -10,9 +11,9 @@ const players: Partial<Record<SfxName, () => void>> = {}
  * Every other component grabs the shared players via useUiSounds().
  */
 export function setupUiSounds(): void {
-  const pop = useSound('/sounds/pop.wav', { volume: 0.45, interrupt: true })
-  const tick = useSound('/sounds/tick.wav', { volume: 0.3, interrupt: true })
-  const toggle = useSound('/sounds/toggle.wav', { volume: 0.4, interrupt: true })
+  const pop = useSound(publicUrl('sounds/pop.wav'), { volume: 0.45, interrupt: true })
+  const tick = useSound(publicUrl('sounds/tick.wav'), { volume: 0.3, interrupt: true })
+  const toggle = useSound(publicUrl('sounds/toggle.wav'), { volume: 0.4, interrupt: true })
   players.pop = () => pop.play()
   players.tick = () => tick.play()
   players.toggle = () => toggle.play()

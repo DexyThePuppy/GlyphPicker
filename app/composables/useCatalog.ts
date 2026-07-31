@@ -1,4 +1,5 @@
 import { categorizeSymbols, type CategoryBucket, type CategoryMapFile } from '~/utils/categories'
+import { publicUrl } from '~/utils/publicUrl'
 import { searchSymbols, type NamingsFile } from '~/utils/search'
 import type { SymbolCatalog, SymbolEntry } from '~/utils/types'
 
@@ -67,9 +68,9 @@ async function load(): Promise<void> {
   if (loaded.value) return
   try {
     const [symRes, nameRes, catRes] = await Promise.all([
-      fetch('/symbols.json'),
-      fetch('/namings.json'),
-      fetch('/categories.json'),
+      fetch(publicUrl('symbols.json')),
+      fetch(publicUrl('namings.json')),
+      fetch(publicUrl('categories.json')),
     ])
     for (const [res, file] of [
       [symRes, 'symbols.json'],
