@@ -1,0 +1,907 @@
+{
+  "_comment": "Everyday words to glyph name fragments / patterns.",
+  "synonyms": {
+    "next": [
+      "forward",
+      "chevron.right",
+      "arrow.right",
+      "arrow.forward",
+      "goforward",
+      "right"
+    ],
+    "previous": [
+      "backward",
+      "chevron.left",
+      "arrow.left",
+      "arrow.backward",
+      "gobackward",
+      "left"
+    ],
+    "prev": [
+      "backward",
+      "chevron.left",
+      "arrow.left",
+      "arrow.backward",
+      "gobackward"
+    ],
+    "back": [
+      "backward",
+      "chevron.left",
+      "arrow.left",
+      "arrow.uturn",
+      "return",
+      "undo"
+    ],
+    "forward": [
+      "forward",
+      "chevron.right",
+      "arrow.right",
+      "arrow.forward",
+      "goforward"
+    ],
+    "continue": [
+      "forward",
+      "play",
+      "goforward"
+    ],
+    "skip": [
+      "forward.end",
+      "backward.end",
+      "goforward",
+      "gobackward"
+    ],
+    "play": [
+      "play",
+      "playpause"
+    ],
+    "pause": [
+      "pause",
+      "playpause"
+    ],
+    "stop": [
+      "stop",
+      "xmark"
+    ],
+    "rewind": [
+      "backward",
+      "gobackward"
+    ],
+    "fastforward": [
+      "forward",
+      "goforward"
+    ],
+    "ff": [
+      "forward",
+      "goforward"
+    ],
+    "up": [
+      "arrow.up",
+      "chevron.up",
+      "trianglehead.up"
+    ],
+    "down": [
+      "arrow.down",
+      "chevron.down",
+      "trianglehead.down"
+    ],
+    "left": [
+      "arrow.left",
+      "chevron.left",
+      "trianglehead.left"
+    ],
+    "right": [
+      "arrow.right",
+      "chevron.right",
+      "trianglehead.right"
+    ],
+    "expand": [
+      "arrow.up.left.and.arrow.down.right",
+      "arrow.up.and.down",
+      "plus.magnifyingglass"
+    ],
+    "collapse": [
+      "arrow.down.right.and.arrow.up.left",
+      "minus.magnifyingglass"
+    ],
+    "close": [
+      "xmark",
+      "multiply"
+    ],
+    "cancel": [
+      "xmark",
+      "multiply"
+    ],
+    "dismiss": [
+      "xmark"
+    ],
+    "clear": [
+      "xmark",
+      "clear",
+      "trash"
+    ],
+    "remove": [
+      "minus",
+      "trash",
+      "xmark",
+      "delete"
+    ],
+    "delete": [
+      "trash",
+      "delete",
+      "xmark.bin"
+    ],
+    "trash": [
+      "trash",
+      "xmark.bin"
+    ],
+    "bin": [
+      "trash",
+      "xmark.bin",
+      "bin"
+    ],
+    "add": [
+      "plus",
+      "badge.plus"
+    ],
+    "new": [
+      "plus",
+      "square.and.pencil",
+      "doc.badge.plus"
+    ],
+    "create": [
+      "plus",
+      "square.and.pencil"
+    ],
+    "edit": [
+      "pencil",
+      "square.and.pencil",
+      "scribble"
+    ],
+    "write": [
+      "pencil",
+      "square.and.pencil"
+    ],
+    "compose": [
+      "square.and.pencil",
+      "pencil"
+    ],
+    "save": [
+      "square.and.arrow.down",
+      "arrow.down.document"
+    ],
+    "download": [
+      "square.and.arrow.down",
+      "arrow.down",
+      "tray.and.arrow.down"
+    ],
+    "upload": [
+      "square.and.arrow.up",
+      "arrow.up",
+      "tray.and.arrow.up"
+    ],
+    "share": [
+      "square.and.arrow.up",
+      "square.and.arrow.up.fill"
+    ],
+    "export": [
+      "square.and.arrow.up",
+      "arrow.up.document"
+    ],
+    "import": [
+      "square.and.arrow.down",
+      "arrow.down.document"
+    ],
+    "copy": [
+      "doc.on.doc",
+      "document.on.document",
+      "rectangle.on.rectangle"
+    ],
+    "paste": [
+      "doc.on.clipboard",
+      "document.on.clipboard",
+      "clipboard"
+    ],
+    "cut": [
+      "scissors"
+    ],
+    "duplicate": [
+      "plus.square.on.square",
+      "rectangle.on.rectangle"
+    ],
+    "clone": [
+      "plus.square.on.square",
+      "rectangle.on.rectangle"
+    ],
+    "search": [
+      "magnifyingglass"
+    ],
+    "find": [
+      "magnifyingglass"
+    ],
+    "zoom": [
+      "magnifyingglass",
+      "plus.magnifyingglass",
+      "minus.magnifyingglass"
+    ],
+    "filter": [
+      "line.3.horizontal.decrease",
+      "slider"
+    ],
+    "sort": [
+      "arrow.up.arrow.down",
+      "arrow.up.and.down"
+    ],
+    "menu": [
+      "line.3.horizontal",
+      "list.bullet",
+      "ellipsis"
+    ],
+    "more": [
+      "ellipsis",
+      "ellipsis.circle"
+    ],
+    "options": [
+      "ellipsis",
+      "gearshape",
+      "slider"
+    ],
+    "settings": [
+      "gear",
+      "gearshape",
+      "slider.horizontal.3"
+    ],
+    "prefs": [
+      "gear",
+      "gearshape"
+    ],
+    "preferences": [
+      "gear",
+      "gearshape"
+    ],
+    "config": [
+      "gear",
+      "gearshape",
+      "slider"
+    ],
+    "home": [
+      "house"
+    ],
+    "house": [
+      "house"
+    ],
+    "info": [
+      "info.circle",
+      "info"
+    ],
+    "help": [
+      "questionmark",
+      "info.circle"
+    ],
+    "warning": [
+      "exclamationmark.triangle",
+      "exclamationmark"
+    ],
+    "alert": [
+      "exclamationmark.triangle",
+      "bell"
+    ],
+    "error": [
+      "xmark.octagon",
+      "exclamationmark.triangle",
+      "xmark.circle"
+    ],
+    "success": [
+      "checkmark",
+      "checkmark.circle"
+    ],
+    "done": [
+      "checkmark",
+      "checkmark.circle"
+    ],
+    "ok": [
+      "checkmark"
+    ],
+    "check": [
+      "checkmark"
+    ],
+    "tick": [
+      "checkmark"
+    ],
+    "user": [
+      "person",
+      "person.crop"
+    ],
+    "profile": [
+      "person.crop.circle",
+      "person"
+    ],
+    "account": [
+      "person.crop.circle",
+      "person"
+    ],
+    "people": [
+      "person.2",
+      "person.3"
+    ],
+    "group": [
+      "person.2",
+      "person.3"
+    ],
+    "contacts": [
+      "person.crop.circle",
+      "person.2"
+    ],
+    "mail": [
+      "envelope",
+      "tray"
+    ],
+    "email": [
+      "envelope"
+    ],
+    "message": [
+      "message",
+      "bubble",
+      "ellipsis.bubble"
+    ],
+    "chat": [
+      "message",
+      "bubble"
+    ],
+    "comment": [
+      "bubble",
+      "text.bubble"
+    ],
+    "phone": [
+      "phone"
+    ],
+    "call": [
+      "phone"
+    ],
+    "video": [
+      "video",
+      "play.rectangle"
+    ],
+    "camera": [
+      "camera"
+    ],
+    "photo": [
+      "photo",
+      "camera"
+    ],
+    "image": [
+      "photo",
+      "camera"
+    ],
+    "gallery": [
+      "photo",
+      "rectangle.stack"
+    ],
+    "mic": [
+      "mic",
+      "microphone"
+    ],
+    "microphone": [
+      "mic"
+    ],
+    "mute": [
+      "mic.slash",
+      "speaker.slash"
+    ],
+    "volume": [
+      "speaker",
+      "speaker.wave"
+    ],
+    "sound": [
+      "speaker",
+      "speaker.wave"
+    ],
+    "speaker": [
+      "speaker"
+    ],
+    "headphones": [
+      "headphones"
+    ],
+    "lock": [
+      "lock"
+    ],
+    "unlock": [
+      "lock.open"
+    ],
+    "secure": [
+      "lock",
+      "checkmark.shield"
+    ],
+    "password": [
+      "key",
+      "lock"
+    ],
+    "key": [
+      "key"
+    ],
+    "visibility": [
+      "eye"
+    ],
+    "show": [
+      "eye"
+    ],
+    "hide": [
+      "eye.slash"
+    ],
+    "hidden": [
+      "eye.slash"
+    ],
+    "folder": [
+      "folder"
+    ],
+    "directory": [
+      "folder"
+    ],
+    "file": [
+      "document",
+      "doc"
+    ],
+    "doc": [
+      "document",
+      "doc"
+    ],
+    "document": [
+      "document",
+      "doc"
+    ],
+    "clipboard": [
+      "clipboard",
+      "doc.on.clipboard"
+    ],
+    "archive": [
+      "archivebox",
+      "tray.full"
+    ],
+    "inbox": [
+      "tray",
+      "tray.and.arrow.down"
+    ],
+    "bookmark": [
+      "bookmark"
+    ],
+    "favorite": [
+      "heart",
+      "star"
+    ],
+    "favourite": [
+      "heart",
+      "star"
+    ],
+    "like": [
+      "heart",
+      "hand.thumbsup"
+    ],
+    "love": [
+      "heart"
+    ],
+    "star": [
+      "star"
+    ],
+    "rate": [
+      "star"
+    ],
+    "flag": [
+      "flag"
+    ],
+    "pin": [
+      "pin",
+      "mappin"
+    ],
+    "location": [
+      "mappin",
+      "location"
+    ],
+    "map": [
+      "map",
+      "mappin"
+    ],
+    "navigate": [
+      "location",
+      "arrow.trianglehead.turn.up.right",
+      "safari"
+    ],
+    "link": [
+      "link"
+    ],
+    "url": [
+      "link"
+    ],
+    "attach": [
+      "paperclip"
+    ],
+    "attachment": [
+      "paperclip"
+    ],
+    "tag": [
+      "tag"
+    ],
+    "label": [
+      "tag"
+    ],
+    "calendar": [
+      "calendar"
+    ],
+    "date": [
+      "calendar"
+    ],
+    "time": [
+      "clock",
+      "timer"
+    ],
+    "clock": [
+      "clock"
+    ],
+    "timer": [
+      "timer",
+      "stopwatch"
+    ],
+    "alarm": [
+      "alarm"
+    ],
+    "bell": [
+      "bell"
+    ],
+    "notification": [
+      "bell"
+    ],
+    "notify": [
+      "bell"
+    ],
+    "refresh": [
+      "arrow.clockwise",
+      "arrow.counterclockwise"
+    ],
+    "reload": [
+      "arrow.clockwise"
+    ],
+    "sync": [
+      "arrow.triangle.2.circlepath",
+      "arrow.2.circlepath",
+      "arrow.clockwise"
+    ],
+    "update": [
+      "arrow.clockwise",
+      "arrow.triangle.2.circlepath"
+    ],
+    "undo": [
+      "arrow.uturn.backward",
+      "arrow.uturn.left"
+    ],
+    "redo": [
+      "arrow.uturn.forward",
+      "arrow.uturn.right"
+    ],
+    "reply": [
+      "arrowshape.turn.up.left",
+      "arrow.uturn.left"
+    ],
+    "send": [
+      "paperplane",
+      "arrow.up"
+    ],
+    "airplane": [
+      "airplane"
+    ],
+    "flight": [
+      "airplane"
+    ],
+    "wifi": [
+      "wifi"
+    ],
+    "network": [
+      "wifi",
+      "antenna.radiowaves"
+    ],
+    "bluetooth": [
+      "wave.3"
+    ],
+    "battery": [
+      "battery"
+    ],
+    "power": [
+      "power",
+      "bolt"
+    ],
+    "bolt": [
+      "bolt"
+    ],
+    "flash": [
+      "bolt",
+      "flashlight"
+    ],
+    "light": [
+      "lightbulb",
+      "sun",
+      "flashlight"
+    ],
+    "dark": [
+      "moon"
+    ],
+    "night": [
+      "moon"
+    ],
+    "sun": [
+      "sun"
+    ],
+    "weather": [
+      "cloud",
+      "sun",
+      "cloud.rain"
+    ],
+    "cloud": [
+      "cloud",
+      "icloud"
+    ],
+    "icloud": [
+      "icloud"
+    ],
+    "online": [
+      "wifi",
+      "icloud"
+    ],
+    "offline": [
+      "wifi.slash",
+      "icloud.slash"
+    ],
+    "cart": [
+      "cart"
+    ],
+    "shop": [
+      "cart",
+      "bag"
+    ],
+    "bag": [
+      "bag",
+      "cart"
+    ],
+    "buy": [
+      "cart",
+      "creditcard"
+    ],
+    "money": [
+      "dollarsign",
+      "creditcard"
+    ],
+    "payment": [
+      "creditcard",
+      "dollarsign"
+    ],
+    "card": [
+      "creditcard"
+    ],
+    "print": [
+      "printer"
+    ],
+    "scan": [
+      "viewfinder",
+      "doc.viewfinder",
+      "barcode"
+    ],
+    "qr": [
+      "qrcode"
+    ],
+    "barcode": [
+      "barcode"
+    ],
+    "crop": [
+      "crop"
+    ],
+    "rotate": [
+      "rotate",
+      "arrow.clockwise"
+    ],
+    "grid": [
+      "grid",
+      "square.grid"
+    ],
+    "list": [
+      "list",
+      "list.bullet"
+    ],
+    "table": [
+      "tablecells"
+    ],
+    "chart": [
+      "chart"
+    ],
+    "graph": [
+      "chart"
+    ],
+    "stats": [
+      "chart"
+    ],
+    "game": [
+      "gamecontroller"
+    ],
+    "controller": [
+      "gamecontroller"
+    ],
+    "music": [
+      "music.note",
+      "headphones"
+    ],
+    "song": [
+      "music.note"
+    ],
+    "book": [
+      "book"
+    ],
+    "read": [
+      "book",
+      "text.book"
+    ],
+    "text": [
+      "text",
+      "textformat"
+    ],
+    "font": [
+      "textformat",
+      "character"
+    ],
+    "bold": [
+      "bold"
+    ],
+    "italic": [
+      "italic"
+    ],
+    "underline": [
+      "underline"
+    ],
+    "code": [
+      "chevron.left.forwardslash.chevron.right",
+      "curlybraces"
+    ],
+    "terminal": [
+      "terminal"
+    ],
+    "bug": [
+      "ant"
+    ],
+    "debug": [
+      "ant"
+    ],
+    "car": [
+      "car"
+    ],
+    "bus": [
+      "bus"
+    ],
+    "bike": [
+      "bicycle"
+    ],
+    "bicycle": [
+      "bicycle"
+    ],
+    "walk": [
+      "figure.walk"
+    ],
+    "train": [
+      "tram",
+      "train"
+    ],
+    "tram": [
+      "tram"
+    ],
+    "heart": [
+      "heart"
+    ],
+    "smiley": [
+      "face.smiling"
+    ],
+    "emoji": [
+      "face.smiling"
+    ],
+    "hand": [
+      "hand"
+    ],
+    "thumbs": [
+      "hand.thumbsup",
+      "hand.thumbsdown"
+    ],
+    "like-up": [
+      "hand.thumbsup"
+    ],
+    "dislike": [
+      "hand.thumbsdown"
+    ],
+    "wifi-off": [
+      "wifi.slash"
+    ],
+    "airplane-mode": [
+      "airplane"
+    ],
+    "brightness": [
+      "sun.max",
+      "light.max"
+    ],
+    "contrast": [
+      "circle.lefthalf.filled"
+    ],
+    "accessibility": [
+      "accessibility",
+      "figure"
+    ],
+    "keyboard": [
+      "keyboard"
+    ],
+    "mouse": [
+      "computermouse"
+    ],
+    "desktop": [
+      "desktopcomputer",
+      "display"
+    ],
+    "laptop": [
+      "laptopcomputer"
+    ],
+    "phone-device": [
+      "iphone"
+    ],
+    "tablet": [
+      "ipad"
+    ],
+    "watch": [
+      "applewatch"
+    ],
+    "tv": [
+      "tv"
+    ],
+    "airplay": [
+      "airplay"
+    ],
+    "shuffle": [
+      "shuffle"
+    ],
+    "repeat": [
+      "repeat"
+    ],
+    "loop": [
+      "repeat",
+      "arrow.2.circlepath"
+    ],
+    "record": [
+      "record.circle",
+      "circle.fill"
+    ],
+    "capture": [
+      "camera",
+      "viewfinder"
+    ],
+    "arrow": [
+      "arrow"
+    ],
+    "chevron": [
+      "chevron"
+    ],
+    "triangle": [
+      "triangle",
+      "arrowtriangle"
+    ],
+    "circle": [
+      "circle"
+    ],
+    "square": [
+      "square"
+    ],
+    "plus": [
+      "plus"
+    ],
+    "minus": [
+      "minus"
+    ],
+    "x": [
+      "xmark"
+    ],
+    "cross": [
+      "xmark",
+      "plus"
+    ],
+    "slash": [
+      "slash"
+    ]
+  }
+}

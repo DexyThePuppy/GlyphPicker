@@ -1,0 +1,16 @@
+# deps / build
+node_modules/
+.nuxt/
+.output/
+.data/
+dist/
+
+# generated / heavy artifacts
+fonts/ttf/
+public/fonts/
+public/pack/
+
+# local junk
+.DS_Store
+*.local
+_dump/

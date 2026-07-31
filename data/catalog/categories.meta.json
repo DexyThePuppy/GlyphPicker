@@ -1,0 +1,198 @@
+{
+  "source": "local",
+  "dumpCount": 7151,
+  "categories": [
+    {
+      "key": "all",
+      "label": "All",
+      "icon": "square.grid.2x2",
+      "count": 7151
+    },
+    {
+      "key": "whatsnew",
+      "label": "What’s New",
+      "icon": "sparkles",
+      "count": 734
+    },
+    {
+      "key": "draw",
+      "label": "Draw",
+      "icon": "scribble",
+      "count": 0
+    },
+    {
+      "key": "variable",
+      "label": "Variable",
+      "icon": "slider.horizontal.below.square.and.square.filled",
+      "count": 1103
+    },
+    {
+      "key": "multicolor",
+      "label": "Multicolor",
+      "icon": "paintpalette",
+      "count": 2293
+    },
+    {
+      "key": "communication",
+      "label": "Communication",
+      "icon": "message",
+      "count": 230
+    },
+    {
+      "key": "weather",
+      "label": "Weather",
+      "icon": "cloud.sun",
+      "count": 171
+    },
+    {
+      "key": "maps",
+      "label": "Maps",
+      "icon": "map",
+      "count": 136
+    },
+    {
+      "key": "objectsandtools",
+      "label": "Objects & Tools",
+      "icon": "folder",
+      "count": 1484
+    },
+    {
+      "key": "devices",
+      "label": "Devices",
+      "icon": "desktopcomputer",
+      "count": 667
+    },
+    {
+      "key": "cameraandphotos",
+      "label": "Camera & Photos",
+      "icon": "camera",
+      "count": 213
+    },
+    {
+      "key": "gaming",
+      "label": "Gaming",
+      "icon": "gamecontroller",
+      "count": 233
+    },
+    {
+      "key": "connectivity",
+      "label": "Connectivity",
+      "icon": "antenna.radiowaves.left.and.right",
+      "count": 94
+    },
+    {
+      "key": "transportation",
+      "label": "Transportation",
+      "icon": "car.fill",
+      "count": 119
+    },
+    {
+      "key": "automotive",
+      "label": "Automotive",
+      "icon": "steeringwheel",
+      "count": 832
+    },
+    {
+      "key": "accessibility",
+      "label": "Accessibility",
+      "icon": "accessibility",
+      "count": 126
+    },
+    {
+      "key": "privacyandsecurity",
+      "label": "Privacy & Security",
+      "icon": "lock",
+      "count": 162
+    },
+    {
+      "key": "human",
+      "label": "Human",
+      "icon": "person.crop.circle",
+      "count": 657
+    },
+    {
+      "key": "home",
+      "label": "Home",
+      "icon": "house",
+      "count": 504
+    },
+    {
+      "key": "fitness",
+      "label": "Fitness",
+      "icon": "figure.run",
+      "count": 368
+    },
+    {
+      "key": "nature",
+      "label": "Nature",
+      "icon": "leaf",
+      "count": 314
+    },
+    {
+      "key": "editing",
+      "label": "Editing",
+      "icon": "slider.horizontal.3",
+      "count": 157
+    },
+    {
+      "key": "textformatting",
+      "label": "Text Formatting",
+      "icon": "textformat",
+      "count": 83
+    },
+    {
+      "key": "media",
+      "label": "Media",
+      "icon": "playpause",
+      "count": 104
+    },
+    {
+      "key": "keyboard",
+      "label": "Keyboard",
+      "icon": "command",
+      "count": 76
+    },
+    {
+      "key": "commerce",
+      "label": "Commerce",
+      "icon": "cart",
+      "count": 559
+    },
+    {
+      "key": "time",
+      "label": "Time",
+      "icon": "timer",
+      "count": 54
+    },
+    {
+      "key": "health",
+      "label": "Health",
+      "icon": "heart",
+      "count": 121
+    },
+    {
+      "key": "shapes",
+      "label": "Shapes",
+      "icon": "square.on.circle",
+      "count": 55
+    },
+    {
+      "key": "arrows",
+      "label": "Arrows",
+      "icon": "arrow.forward",
+      "count": 599
+    },
+    {
+      "key": "indices",
+      "label": "Indices",
+      "icon": "a.circle",
+      "count": 582
+    },
+    {
+      "key": "math",
+      "label": "Math",
+      "icon": "radicand.squareroot",
+      "count": 78
+    }
+  ]
+}
