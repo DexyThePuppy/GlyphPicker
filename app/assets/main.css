@@ -115,6 +115,32 @@ button {
   grid-template-columns: 36px minmax(0, 1fr);
 }
 
+.font-controls {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 12px;
+}
+.font-controls label { display: grid; gap: 4px; font-size: 12px; }
+.font-controls output { display: inline; font-variant-numeric: tabular-nums; }
+.font-controls select {
+  color: inherit;
+  background: var(--bg-elevated, #18201b);
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  padding: 7px;
+  max-width: 100%;
+}
+.font-controls input { width: 110px; accent-color: var(--accent, #a8d5ad); }
+.font-controls a { color: inherit; font-size: 12px; padding: 7px 0; }
+.cell .glyph, .detail-preview .glyph {
+  font-family: var(--symbol-font, var(--font-glyph));
+  font-weight: var(--symbol-weight, var(--weight));
+  font-variation-settings: var(--symbol-axes, normal);
+  font-optical-sizing: none;
+}
+
 .menu-btn {
   border: 1px solid var(--line-strong);
   background: var(--bg-elevated);

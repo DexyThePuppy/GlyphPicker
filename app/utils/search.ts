@@ -32,7 +32,7 @@ function tokenizeQuery(query: string): string[] {
 
 function scoreTokenAgainstName(name: string, token: string, expansions: string[]): number {
   const n = name.toLowerCase()
-  const parts = n.split('.')
+  const parts = n.split(/[._]/)
 
   if (n === token) return 100
   if (n.startsWith(token + '.') || n.startsWith(token)) return 90

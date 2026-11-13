@@ -1,0 +1,178 @@
+{
+  "order": [
+    {
+      "id": "UI actions",
+      "title": "UI Actions",
+      "icon": "slider.horizontal.3"
+    },
+    {
+      "id": "Actions",
+      "title": "Actions",
+      "icon": "square.grid.2x2"
+    },
+    {
+      "id": "Communicate",
+      "title": "Communication",
+      "icon": "message"
+    },
+    {
+      "id": "Text",
+      "title": "Text Formatting",
+      "icon": "textformat"
+    },
+    {
+      "id": "Audio&Video",
+      "title": "Audio & Video",
+      "icon": "playpause"
+    },
+    {
+      "id": "Images",
+      "title": "Images",
+      "icon": "camera"
+    },
+    {
+      "id": "Android",
+      "title": "Android",
+      "icon": "smartphone"
+    },
+    {
+      "id": "Hardware",
+      "title": "Hardware",
+      "icon": "desktopcomputer"
+    },
+    {
+      "id": "Privacy",
+      "title": "Privacy & Security",
+      "icon": "lock"
+    },
+    {
+      "id": "Business",
+      "title": "Business",
+      "icon": "briefcase"
+    },
+    {
+      "id": "Social",
+      "title": "Social",
+      "icon": "person.crop.circle"
+    },
+    {
+      "id": "Activities",
+      "title": "Activities",
+      "icon": "figure.run"
+    },
+    {
+      "id": "Maps",
+      "title": "Maps",
+      "icon": "map"
+    },
+    {
+      "id": "Transit",
+      "title": "Transit",
+      "icon": "car.fill"
+    },
+    {
+      "id": "Travel",
+      "title": "Travel",
+      "icon": "airplane"
+    },
+    {
+      "id": "Home",
+      "title": "Home",
+      "icon": "house"
+    },
+    {
+      "id": "Household",
+      "title": "Household",
+      "icon": "lamp.desk"
+    },
+    {
+      "id": "Brand",
+      "title": "Brand",
+      "icon": "star"
+    }
+  ],
+  "overrides": {
+    "add_to_photos": "Images",
+    "airplanemode_active": "Android",
+    "ambient_screen": "Home",
+    "assistant": "UI actions",
+    "astrophotography_auto": "Images",
+    "astrophotography_off": "Images",
+    "auto_activity_zone": "Home",
+    "auto_awesome": "Images",
+    "auto_detect_voice": "Audio&Video",
+    "auto_draw_solid": "Images",
+    "auto_fix": "Images",
+    "auto_fix_high": "Images",
+    "auto_fix_normal": "Images",
+    "auto_fix_off": "Images",
+    "auto_graph": "Business",
+    "auto_label": "Text",
+    "auto_meeting_room": "Business",
+    "auto_mode": "UI actions",
+    "auto_schedule": "Home",
+    "auto_timer": "Actions",
+    "auto_videocam": "Audio&Video",
+    "autopay": "Business",
+    "battery_saver": "Android",
+    "battery_vert_005": "Android",
+    "battery_vert_020": "Android",
+    "battery_vert_050": "Android",
+    "brightness_high": "Android",
+    "brightness_low": "Android",
+    "camera_enhance": "Images",
+    "cloudy_snowing": "Travel",
+    "cut": "Text",
+    "do_disturb_alt": "Android",
+    "do_not_disturb": "Android",
+    "done": "UI actions",
+    "drawing_recognition": "Images",
+    "drive_file_rename_outline": "Text",
+    "expand_less": "UI actions",
+    "expand_more": "UI actions",
+    "face_retouching_natural": "Images",
+    "feed": "Text",
+    "file_map": "Maps",
+    "filter_hdr": "Images",
+    "filter_list_alt": "UI actions",
+    "generating_tokens": "Actions",
+    "handwriting_recognition": "Text",
+    "hourglass_full": "Actions",
+    "image_not_supported": "Images",
+    "insights": "Business",
+    "local_airport": "Travel",
+    "location_automation": "Home",
+    "magic_button": "UI actions",
+    "magic_exchange": "Actions",
+    "magic_tether": "Actions",
+    "monetization_on": "Business",
+    "motion_photos_off": "Images",
+    "movie_filter": "Audio&Video",
+    "nest_wifi_gale": "Home",
+    "offline_bolt": "UI actions",
+    "panorama_fish_eye": "Images",
+    "performance_max": "Business",
+    "photo_filter": "Images",
+    "play_shapes": "Audio&Video",
+    "push_pin": "UI actions",
+    "rate_review_rtl": "Communicate",
+    "replay_circle_filled": "Audio&Video",
+    "screenshot": "Android",
+    "settings_suggest": "UI actions",
+    "shape_recognition": "Images",
+    "sign_language_2": "Social",
+    "sleep": "Activities",
+    "smart_button": "UI actions",
+    "temp_preferences_custom": "Home",
+    "tips_and_updates": "UI actions",
+    "transcribe": "Communicate",
+    "vitals": "Activities",
+    "volume_down_alt": "Audio&Video",
+    "width": "UI actions",
+    "wifi_calling_1": "Communicate",
+    "wifi_calling_2": "Communicate",
+    "wifi_calling_3": "Communicate",
+    "work_off": "Business",
+    "youtube_activity": "Audio&Video"
+  }
+}

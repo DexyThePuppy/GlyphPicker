@@ -172,7 +172,7 @@ function titleWord(raw: string): string {
 /** Human label: text.document → Text Document */
 export function prettyLabel(name: string): string {
   return name
-    .split('.')
+    .split(/[._]/)
     .filter(Boolean)
     .map(titleWord)
     .join(' ')

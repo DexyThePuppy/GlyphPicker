@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { prettyLabel } from '~/utils/names'
 
-const { selected, synonyms } = useCatalog()
+const { selected, synonyms, isMaterial, catalog, materialWeight, materialFill,
+  materialGrade, materialOpticalSize } = useCatalog()
+const axisSettings = computed(() => `"FILL" ${materialFill.value}, "wght" ${materialWeight.value}, "GRAD" ${materialGrade.value}, "opsz" ${materialOpticalSize.value}`)
 const { copyValue } = useCopy()
 
 const jsEscape = computed(() =>
@@ -31,6 +33,10 @@ const kvRows = computed<Array<[string, string]>>(() => {
   if (!symbol) return []
   return [
     ['Name', symbol.name],
+    ...(isMaterial.value ? [
+      ['Font', catalog.value?.fontFamily ?? ''],
+      ['Axes', axisSettings.value],
+    ] as Array<[string, string]> : []),
     ['Unicode', symbol.hex],
     ['Code point', String(symbol.code)],
     ['JS escape', jsEscape.value],
@@ -48,6 +54,9 @@ const copyActions = computed<Array<[string, string, string]>>(() => {
     ['Copy unicode', 'unicode', symbol.hex],
     ['Copy JS escape', 'JS escape', jsEscape.value],
     ['Copy HTML entity', 'HTML entity', htmlEntity.value],
+    ...(isMaterial.value ? [
+      ['Copy font settings', 'font settings', `font-family: '${catalog.value?.fontFamily}'; font-variation-settings: ${axisSettings.value};`],
+    ] as Array<[string, string, string]> : []),
   ]
 })
 </script>

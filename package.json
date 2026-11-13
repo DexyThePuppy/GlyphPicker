@@ -4,12 +4,16 @@
   "version": "2.0.0",
   "type": "module",
   "scripts": {
+    "predev": "npm run build:index",
+    "prebuild": "npm run build:index",
+    "pregenerate": "npm run build:index",
     "dev": "nuxt dev",
     "build": "nuxt generate",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "build:index": "python scripts/build-index.py",
+    "build:material": "python scripts/build-material.py",
     "build:categories": "python scripts/build-categories.py",
     "build:pack": "python scripts/build-pack.py",
     "build:data": "python scripts/build-index.py && python scripts/build-categories.py && python scripts/build-pack.py"

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { query, glyphByName } = useCatalog()
+const { query, glyphByName, isMaterial } = useCatalog()
 const { drawerMode, menuOpen, toggleMenu } = useUiLayout()
 const { tick } = useUiSounds()
 
@@ -73,6 +73,7 @@ onMounted(() => searchEl.value?.focus())
       </button>
     </div>
 
-    <WeightControl v-if="!drawerMode" />
+    <WeightControl v-if="!drawerMode && !isMaterial" />
+    <FontControls />
   </div>
 </template>

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import shutil
+import runpy
 from pathlib import Path
 
 try:
@@ -89,6 +90,7 @@ def main() -> None:
         shutil.copy2(otf, font_out / otf.name)
 
     sync_namings()
+    runpy.run_path(str(ROOT / 'scripts' / 'build-material.py'), run_name='__main__')
 
     copied = len(list(font_out.glob("*.otf")))
     print(f"Wrote {out.relative_to(ROOT)} ({payload['total']} symbols, {payload['inFont']} in font)")

@@ -10,12 +10,14 @@ const {
   activeCategoryTitle,
   showNames,
   selected,
+  collection,
+  materialStyle,
 } = useCatalog()
 const { copyValue } = useCopy()
 
 const limit = ref(CHUNK)
 const gridKey = computed(() =>
-  browseMode.value ? `cat:${activeCategoryId.value}` : 'search',
+  `${collection.value}:${materialStyle.value}:${browseMode.value ? `cat:${activeCategoryId.value}` : 'search'}`,
 )
 
 watch([gridKey, visibleSymbols], () => {
@@ -23,7 +25,6 @@ watch([gridKey, visibleSymbols], () => {
 })
 
 const shown = computed(() => visibleSymbols.value.slice(0, limit.value))
-const selectedCode = computed(() => selected.value?.code ?? -1)
 
 const statusText = computed(() => {
   const total = visibleSymbols.value.length
@@ -62,10 +63,10 @@ function pick(symbol: SymbolEntry): void {
       <div :key="gridKey" class="grid" :class="{ 'grid--compact': !showNames }">
         <IconCell
           v-for="(symbol, i) in shown"
-          :key="symbol.code"
-          v-memo="[symbol.code === selectedCode]"
+          :key="symbol.name"
+          v-memo="[symbol, symbol.name === selected?.name]"
           :symbol="symbol"
-          :selected="symbol.code === selectedCode"
+          :selected="symbol.name === selected?.name"
           :style="{ '--d': `${Math.min(i, 40) * 9}ms` }"
           @pick="pick"
         />

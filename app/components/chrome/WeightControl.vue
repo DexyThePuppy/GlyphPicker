@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { WEIGHTS, weightAt } from '~/utils/weights'
 
-const { weightIndex, glyphByName } = useCatalog()
+const { weightIndex, glyphByName, isMaterial } = useCatalog()
 const weight = computed(() => weightAt(weightIndex.value))
 
 function glyph(name: string, fallback = '•'): string {
@@ -10,7 +10,7 @@ function glyph(name: string, fallback = '•'): string {
 </script>
 
 <template>
-  <div class="weight" :title="`${weight.label} · ${weight.weight}`">
+  <div v-if="!isMaterial" class="weight" :title="`${weight.label} · ${weight.weight}`">
     <span class="weight-icon glyph" aria-hidden="true">{{ glyph('lineweight') }}</span>
     <input
       v-model.number="weightIndex"

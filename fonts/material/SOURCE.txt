@@ -1,0 +1,6 @@
+Google Material Symbols
+https://github.com/google/material-design-icons
+Commit: bd8cb85bd4bad964fe6918f79665bb40c3a8efef
+Source: variablefont/MaterialSymbols{Outlined,Rounded,Sharp}[FILL,GRAD,opsz,wght].ttf and matching .codepoints
+License: Apache-2.0 (see LICENSE)
+Original variable TTF files, unmodified. No WOFF/WOFF2 assets.
