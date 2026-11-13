@@ -1,10 +1,43 @@
 <script setup lang="ts">
+import { glyphToSvg, loadFont } from '~/utils/glyphSvg'
 import { prettyLabel } from '~/utils/names'
+import { publicUrl } from '~/utils/publicUrl'
+import { weightAt } from '~/utils/weights'
 
-const { selected, synonyms, isMaterial, catalog, materialWeight, materialFill,
-  materialGrade, materialOpticalSize } = useCatalog()
+const { selected, synonyms, isMaterial, catalog, materialStyle, materialWeight, materialFill,
+  materialGrade, materialOpticalSize, weightIndex } = useCatalog()
 const axisSettings = computed(() => `"FILL" ${materialFill.value}, "wght" ${materialWeight.value}, "GRAD" ${materialGrade.value}, "opsz" ${materialOpticalSize.value}`)
-const { copyValue } = useCopy()
+const { copyValue, copySvg } = useCopy()
+
+/** The font file currently used to render glyphs (matches the @font-face in app.vue). */
+const fontUrl = computed(() => isMaterial.value
+  ? publicUrl(`fonts/material/MaterialSymbols${materialStyle.value[0]!.toUpperCase()}${materialStyle.value.slice(1)}.ttf`)
+  : publicUrl(`fonts/${weightAt(weightIndex.value).file}`))
+
+const svgHint = computed(() => isMaterial.value
+  ? `${materialOpticalSize.value}px · wght ${materialWeight.value} · fill ${materialFill.value}`
+  : `${weightAt(weightIndex.value).label} · for Figma, Illustrator…`)
+
+function copySelectedSvg(): void {
+  const symbol = selected.value
+  if (!symbol) return
+  const svg = glyphToSvg(isMaterial.value
+    ? {
+        fontUrl: fontUrl.value,
+        codePoint: symbol.code,
+        variation: { FILL: materialFill.value, wght: materialWeight.value, GRAD: materialGrade.value, opsz: materialOpticalSize.value },
+        // Material icons are drawn on a square grid; keep it so padding/alignment survive.
+        frame: 'em',
+        emPx: materialOpticalSize.value,
+      }
+    : { fontUrl: fontUrl.value, codePoint: symbol.code, frame: 'tight', emPx: 32 })
+  void copySvg('SVG', svg)
+}
+
+/** Start fetching/parsing the font on hover so the copy itself is instant. */
+function prefetchFont(): void {
+  loadFont(fontUrl.value).catch(() => {})
+}
 
 const jsEscape = computed(() =>
   selected.value ? `\\u{${selected.value.code.toString(16).toUpperCase()}}` : '',
@@ -96,6 +129,15 @@ const copyActions = computed<Array<[string, string, string]>>(() => {
       </div>
     </div>
     <div v-if="selected" class="actions">
+      <button
+        type="button"
+        @click="copySelectedSvg"
+        @pointerenter="prefetchFont"
+        @focus="prefetchFont"
+      >
+        <strong>Copy SVG</strong>
+        <span>{{ svgHint }}</span>
+      </button>
       <button
         v-for="[title, label, value] in copyActions"
         :key="title"
