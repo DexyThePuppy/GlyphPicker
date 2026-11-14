@@ -842,6 +842,49 @@ html.menu-open body {
   word-break: break-all;
 }
 
+/* Grouped action: a label plus a row of option buttons (e.g. PNG sizes). */
+.action-group {
+  border: 1px solid var(--line-strong);
+  background: var(--bg-elevated);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.action-group-head strong {
+  display: block;
+  font-size: 0.82rem;
+  margin-bottom: 2px;
+}
+
+.action-group-head span {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.actions .size-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.actions .size-buttons button {
+  padding: 6px 0;
+  border-radius: 8px;
+  background: var(--bg-panel);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.actions .size-buttons button:hover,
+.actions .size-buttons button:focus-visible {
+  border-color: rgba(125, 207, 154, 0.45);
+  background: var(--accent-dim);
+}
+
 /* ---------- Empty & error ---------- */
 .empty {
   padding: 48px 16px;

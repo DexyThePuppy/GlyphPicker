@@ -50,5 +50,20 @@ export function useCopy() {
     pop()
   }
 
-  return { copyValue, copySvg }
+  /** Copies a PNG image. The blob is passed as a promise for the same reason as in copySvg. */
+  async function copyPng(label: string, png: Promise<Blob>): Promise<void> {
+    try {
+      if (!supportsType('image/png')) throw new Error('Image clipboard unsupported')
+      await navigator.clipboard.write([new ClipboardItem({ 'image/png': png })])
+    } catch (err) {
+      const reason = await png.then(() => null, (e: unknown) => e)
+      console.error(reason ?? err)
+      show(reason instanceof Error ? `PNG failed: ${reason.message}` : 'Image clipboard unavailable')
+      return
+    }
+    show(`Copied ${label}`)
+    pop()
+  }
+
+  return { copyValue, copySvg, copyPng }
 }

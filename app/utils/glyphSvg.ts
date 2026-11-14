@@ -66,3 +66,36 @@ export async function glyphToSvg(opts: GlyphSvgOptions): Promise<string> {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${round(w * scale)}" height="${round(h * scale)}" `
     + `viewBox="0 0 ${round(w)} ${round(h)}">${title}<path d="${d}"/></svg>`
 }
+
+/**
+ * Rasterizes an SVG from {@link glyphToSvg} to a transparent PNG whose longest side is `maxSide` px.
+ * The SVG's width/height are rewritten first so the browser draws the vector at full resolution
+ * instead of upscaling a small bitmap.
+ */
+export async function svgToPng(svg: string, maxSide: number): Promise<Blob> {
+  const viewBox = /viewBox="[\d.-]+ [\d.-]+ ([\d.]+) ([\d.]+)"/.exec(svg)
+  if (!viewBox) throw new Error('SVG has no viewBox')
+  const vw = Number(viewBox[1])
+  const vh = Number(viewBox[2])
+  const k = maxSide / Math.max(vw, vh)
+  const width = Math.max(1, Math.round(vw * k))
+  const height = Math.max(1, Math.round(vh * k))
+  const sized = svg.replace(/^<svg([^>]*?) width="[^"]*" height="[^"]*"/, `<svg$1 width="${width}" height="${height}"`)
+
+  const url = URL.createObjectURL(new Blob([sized], { type: 'image/svg+xml' }))
+  try {
+    const img = new Image()
+    img.src = url
+    await img.decode()
+    const canvas = document.createElement('canvas')
+    canvas.width = width
+    canvas.height = height
+    const ctx = canvas.getContext('2d')
+    if (!ctx) throw new Error('Canvas unavailable')
+    ctx.drawImage(img, 0, 0, width, height)
+    return await new Promise<Blob>((resolve, reject) =>
+      canvas.toBlob((blob) => (blob ? resolve(blob) : reject(new Error('PNG encoding failed'))), 'image/png'))
+  } finally {
+    URL.revokeObjectURL(url)
+  }
+}
